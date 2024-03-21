@@ -1,0 +1,107 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav {
+    width: 73%;
+    padding: 1%
+}
+
+nav ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+.content {
+    flex: 1;
+    padding-right: 20px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.heroImg {
+    width: 300px;
+    height: 600px;
+    padding: 25px;
+}
+
+.container {
+    display: flex;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content p {
+    margin-bottom: 20 px;
+}
+
+
+.container p {
+    display: inline-block;
+}
+
+footer { 
+    background-color: #373738;
+    padding: 20px;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+}
+
+footer ul li {
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.flexContainer {
+    display:flex
+}
+
+.flexChild {
+    width: 33%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'project1 project 2 project3';
+    grid-gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* CSS styles for smaller screens */
+    body {
+        font-size: 14px;
+    }
+    .flexcontainer {
+        flex-direction:column;
+    }
+    .flexChild {
+    width: 100%;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-areas:
+            'project1'
+            'project2'
+            'project3';
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+}
