@@ -72,6 +72,14 @@ main {
     flex: 1;
 }
 
+.mySkills {
+    text-align: center; /* Center aligns the text horizontally */
+}
+
+.myWork {
+    text-align: center; /* Center aligns the text horizontally */
+}
+
 .text-content p {
     margin-bottom: 20 px;
 }
